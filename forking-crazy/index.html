@@ -1,0 +1,69 @@
+<div class="fork">
+	<div class="top">
+		<div class="teeth">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+	<div class="base"></div>
+</div>
+
+<style>
+	body {
+		background: #6592cf;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.fork {
+		background-color: #060f55;
+		width: 140px;
+		height: 180px;
+		border-radius: 0 0 70px 70px;
+		position: fixed;
+		bottom: 50;
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.top {
+		width: 140px;
+		height: 180px;
+	}
+
+	.teeth {
+		width: 140px;
+		height: 110px;
+		display: flex;
+		position: absolute;
+		top: -20;
+	}
+
+	.teeth div:nth-child(even) {
+		width: 20px;
+		height: 110px;
+		background: #6592cf;
+		border-radius: 10px 10px 10px 10px;
+	}
+
+	.teeth div:nth-child(2n + 1) {
+		width: 20px;
+		height: 110px;
+		background: #060f55;
+		border-radius: 10px 10px 10px 10px;
+	}
+
+	.base {
+		background-color: #060f55;
+		width: 20px;
+		height: 65px;
+		position: fixed;
+		bottom: 0;
+	}
+</style>
